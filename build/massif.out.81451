@@ -1,0 +1,1894 @@
+desc: (none)
+cmd: ./bin/graph_engine
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=32975836
+mem_heap_B=1375508
+mem_heap_extra_B=87220
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=76134068
+mem_heap_B=1406196
+mem_heap_extra_B=105220
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=107318823
+mem_heap_B=1473420
+mem_heap_extra_B=80124
+mem_stacks_B=0
+heap_tree=detailed
+n9: 1473420 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 588112 0x110EAE: allocate (new_allocator.h:151)
+  n1: 588112 0x110EAE: allocate (alloc_traits.h:482)
+   n1: 588112 0x110EAE: _M_allocate (stl_vector.h:381)
+    n1: 588112 0x110EAE: _M_allocate (stl_vector.h:378)
+     n1: 588112 0x110EAE: void std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >::_M_realloc_insert<std::pair<int, double> >(__gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > >, std::pair<int, double>&&) (vector.tcc:459)
+      n1: 588112 0x10E4BB: emplace_back<std::pair<int, double> > (vector.tcc:123)
+       n1: 588112 0x10E4BB: push_back (stl_vector.h:1299)
+        n1: 588112 0x10E4BB: addEdge (graph.hpp:24)
+         n1: 588112 0x10E4BB: addEdge (graph.hpp:19)
+          n0: 588112 0x10E4BB: main (main.cpp:135)
+ n1: 262144 0x110A96: allocate (new_allocator.h:151)
+  n1: 262144 0x110A96: allocate (alloc_traits.h:482)
+   n1: 262144 0x110A96: _M_allocate (stl_vector.h:381)
+    n1: 262144 0x110A96: _M_allocate (stl_vector.h:378)
+     n1: 262144 0x110A96: std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::pair<double, double>*, std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > > >, unsigned long, std::pair<double, double> const&) (vector.tcc:587)
+      n1: 262144 0x10DD61: resize (stl_vector.h:1037)
+       n1: 262144 0x10DD61: set_coords (graph.hpp:33)
+        n0: 262144 0x10DD61: main (main.cpp:127)
+ n1: 240000 0x10DA90: allocate (new_allocator.h:151)
+  n1: 240000 0x10DA90: allocate (alloc_traits.h:482)
+   n1: 240000 0x10DA90: _M_allocate (stl_vector.h:381)
+    n1: 240000 0x10DA90: _M_allocate (stl_vector.h:378)
+     n1: 240000 0x10DA90: _M_create_storage (stl_vector.h:398)
+      n1: 240000 0x10DA90: _Vector_base (stl_vector.h:335)
+       n1: 240000 0x10DA90: vector (stl_vector.h:557)
+        n1: 240000 0x10DA90: Graph (graph.hpp:14)
+         n0: 240000 0x10DA90: main (main.cpp:119)
+ n1: 98304 0x112FEF: allocate (new_allocator.h:151)
+  n1: 98304 0x112FEF: allocate (alloc_traits.h:482)
+   n1: 98304 0x112FEF: _M_allocate (stl_vector.h:381)
+    n1: 98304 0x112FEF: _M_allocate (stl_vector.h:378)
+     n1: 98304 0x112FEF: _M_realloc_insert<double&, int const&> (vector.tcc:459)
+      n1: 98304 0x112FEF: emplace_back<double&, int const&> (vector.tcc:123)
+       n1: 98304 0x112FEF: emplace<double&, int const&> (stl_queue.h:756)
+        n1: 98304 0x112FEF: a_star_with_path(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:73)
+         n1: 98304 0x1132BD: a_star(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:88)
+          n1: 98304 0x1100FF: operator() (main.cpp:171)
+           n1: 98304 0x1100FF: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+            n1: 98304 0x1100FF: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+             n1: 98304 0x1100FF: std::_Function_handler<void (), main::{lambda()#5}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+              n1: 98304 0x113786: operator() (std_function.h:591)
+               n1: 98304 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                n0: 98304 0x10DFF3: main (main.cpp:171)
+ n1: 80000 0x112827: allocate (new_allocator.h:151)
+  n1: 80000 0x112827: allocate (alloc_traits.h:482)
+   n1: 80000 0x112827: _M_allocate (stl_vector.h:381)
+    n1: 80000 0x112827: _M_allocate (stl_vector.h:378)
+     n1: 80000 0x112827: _M_create_storage (stl_vector.h:398)
+      n1: 80000 0x112827: _Vector_base (stl_vector.h:335)
+       n1: 80000 0x112827: vector (stl_vector.h:571)
+        n1: 80000 0x112827: a_star_with_path(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:25)
+         n1: 80000 0x1132BD: a_star(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:88)
+          n1: 80000 0x1100FF: operator() (main.cpp:171)
+           n1: 80000 0x1100FF: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+            n1: 80000 0x1100FF: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+             n1: 80000 0x1100FF: std::_Function_handler<void (), main::{lambda()#5}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+              n1: 80000 0x113786: operator() (std_function.h:591)
+               n1: 80000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                n0: 80000 0x10DFF3: main (main.cpp:171)
+ n1: 80000 0x1128A0: allocate (new_allocator.h:151)
+  n1: 80000 0x1128A0: allocate (alloc_traits.h:482)
+   n1: 80000 0x1128A0: _M_allocate (stl_vector.h:381)
+    n1: 80000 0x1128A0: _M_allocate (stl_vector.h:378)
+     n1: 80000 0x1128A0: _M_create_storage (stl_vector.h:398)
+      n1: 80000 0x1128A0: _Vector_base (stl_vector.h:335)
+       n1: 80000 0x1128A0: vector (stl_vector.h:571)
+        n1: 80000 0x1128A0: a_star_with_path(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:26)
+         n1: 80000 0x1132BD: a_star(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:88)
+          n1: 80000 0x1100FF: operator() (main.cpp:171)
+           n1: 80000 0x1100FF: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+            n1: 80000 0x1100FF: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+             n1: 80000 0x1100FF: std::_Function_handler<void (), main::{lambda()#5}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+              n1: 80000 0x113786: operator() (std_function.h:591)
+               n1: 80000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                n0: 80000 0x10DFF3: main (main.cpp:171)
+ n1: 73728 0x496438E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n0: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 40000 0x112920: allocate (new_allocator.h:151)
+  n1: 40000 0x112920: allocate (alloc_traits.h:482)
+   n1: 40000 0x112920: _M_allocate (stl_vector.h:381)
+    n1: 40000 0x112920: _M_allocate (stl_vector.h:378)
+     n1: 40000 0x112920: _M_create_storage (stl_vector.h:398)
+      n1: 40000 0x112920: _Vector_base (stl_vector.h:335)
+       n1: 40000 0x112920: vector (stl_vector.h:571)
+        n1: 40000 0x112920: a_star_with_path(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:27)
+         n1: 40000 0x1132BD: a_star(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:88)
+          n1: 40000 0x1100FF: operator() (main.cpp:171)
+           n1: 40000 0x1100FF: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+            n1: 40000 0x1100FF: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+             n1: 40000 0x1100FF: std::_Function_handler<void (), main::{lambda()#5}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+              n1: 40000 0x113786: operator() (std_function.h:591)
+               n1: 40000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                n0: 40000 0x10DFF3: main (main.cpp:171)
+ n0: 11132 in 15 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=4
+#-----------
+time=128284206
+mem_heap_B=1473420
+mem_heap_extra_B=80124
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=158315318
+mem_heap_B=1520652
+mem_heap_extra_B=80124
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=201939018
+mem_heap_B=3649644
+mem_heap_extra_B=318788
+mem_stacks_B=0
+heap_tree=detailed
+n5: 3649644 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1317536 0x110EAE: allocate (new_allocator.h:151)
+  n1: 1317536 0x110EAE: allocate (alloc_traits.h:482)
+   n1: 1317536 0x110EAE: _M_allocate (stl_vector.h:381)
+    n1: 1317536 0x110EAE: _M_allocate (stl_vector.h:378)
+     n1: 1317536 0x110EAE: void std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >::_M_realloc_insert<std::pair<int, double> >(__gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > >, std::pair<int, double>&&) (vector.tcc:459)
+      n1: 1317536 0x10E4BB: emplace_back<std::pair<int, double> > (vector.tcc:123)
+       n1: 1317536 0x10E4BB: push_back (stl_vector.h:1299)
+        n1: 1317536 0x10E4BB: addEdge (graph.hpp:24)
+         n1: 1317536 0x10E4BB: addEdge (graph.hpp:19)
+          n0: 1317536 0x10E4BB: main (main.cpp:135)
+ n1: 1200000 0x10DA90: allocate (new_allocator.h:151)
+  n1: 1200000 0x10DA90: allocate (alloc_traits.h:482)
+   n1: 1200000 0x10DA90: _M_allocate (stl_vector.h:381)
+    n1: 1200000 0x10DA90: _M_allocate (stl_vector.h:378)
+     n1: 1200000 0x10DA90: _M_create_storage (stl_vector.h:398)
+      n1: 1200000 0x10DA90: _Vector_base (stl_vector.h:335)
+       n1: 1200000 0x10DA90: vector (stl_vector.h:557)
+        n1: 1200000 0x10DA90: Graph (graph.hpp:14)
+         n0: 1200000 0x10DA90: main (main.cpp:119)
+ n1: 1048576 0x110A96: allocate (new_allocator.h:151)
+  n1: 1048576 0x110A96: allocate (alloc_traits.h:482)
+   n1: 1048576 0x110A96: _M_allocate (stl_vector.h:381)
+    n1: 1048576 0x110A96: _M_allocate (stl_vector.h:378)
+     n1: 1048576 0x110A96: std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::pair<double, double>*, std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > > >, unsigned long, std::pair<double, double> const&) (vector.tcc:587)
+      n1: 1048576 0x10DD61: resize (stl_vector.h:1037)
+       n1: 1048576 0x10DD61: set_coords (graph.hpp:33)
+        n0: 1048576 0x10DD61: main (main.cpp:127)
+ n1: 73728 0x496438E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n0: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 9804 in 22 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=7
+#-----------
+time=225571684
+mem_heap_B=4957980
+mem_heap_extra_B=392116
+mem_stacks_B=0
+heap_tree=detailed
+n5: 4957980 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2625872 0x110EAE: allocate (new_allocator.h:151)
+  n1: 2625872 0x110EAE: allocate (alloc_traits.h:482)
+   n1: 2625872 0x110EAE: _M_allocate (stl_vector.h:381)
+    n1: 2625872 0x110EAE: _M_allocate (stl_vector.h:378)
+     n1: 2625872 0x110EAE: void std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >::_M_realloc_insert<std::pair<int, double> >(__gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > >, std::pair<int, double>&&) (vector.tcc:459)
+      n1: 2625872 0x10E4BB: emplace_back<std::pair<int, double> > (vector.tcc:123)
+       n1: 2625872 0x10E4BB: push_back (stl_vector.h:1299)
+        n1: 2625872 0x10E4BB: addEdge (graph.hpp:24)
+         n1: 2625872 0x10E4BB: addEdge (graph.hpp:19)
+          n0: 2625872 0x10E4BB: main (main.cpp:135)
+ n1: 1200000 0x10DA90: allocate (new_allocator.h:151)
+  n1: 1200000 0x10DA90: allocate (alloc_traits.h:482)
+   n1: 1200000 0x10DA90: _M_allocate (stl_vector.h:381)
+    n1: 1200000 0x10DA90: _M_allocate (stl_vector.h:378)
+     n1: 1200000 0x10DA90: _M_create_storage (stl_vector.h:398)
+      n1: 1200000 0x10DA90: _Vector_base (stl_vector.h:335)
+       n1: 1200000 0x10DA90: vector (stl_vector.h:557)
+        n1: 1200000 0x10DA90: Graph (graph.hpp:14)
+         n0: 1200000 0x10DA90: main (main.cpp:119)
+ n1: 1048576 0x110A96: allocate (new_allocator.h:151)
+  n1: 1048576 0x110A96: allocate (alloc_traits.h:482)
+   n1: 1048576 0x110A96: _M_allocate (stl_vector.h:381)
+    n1: 1048576 0x110A96: _M_allocate (stl_vector.h:378)
+     n1: 1048576 0x110A96: std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::pair<double, double>*, std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > > >, unsigned long, std::pair<double, double> const&) (vector.tcc:587)
+      n1: 1048576 0x10DD61: resize (stl_vector.h:1037)
+       n1: 1048576 0x10DD61: set_coords (graph.hpp:33)
+        n0: 1048576 0x10DD61: main (main.cpp:127)
+ n1: 73728 0x496438E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n0: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 9804 in 22 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=262851397
+mem_heap_B=6322908
+mem_heap_extra_B=524028
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=301493508
+mem_heap_B=6296524
+mem_heap_extra_B=503428
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=327254167
+mem_heap_B=6168460
+mem_heap_extra_B=434484
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=364461519
+mem_heap_B=6311196
+mem_heap_extra_B=518172
+mem_stacks_B=0
+heap_tree=detailed
+n9: 6311196 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2936256 0x110EAE: allocate (new_allocator.h:151)
+  n1: 2936256 0x110EAE: allocate (alloc_traits.h:482)
+   n1: 2936256 0x110EAE: _M_allocate (stl_vector.h:381)
+    n1: 2936256 0x110EAE: _M_allocate (stl_vector.h:378)
+     n1: 2936256 0x110EAE: void std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >::_M_realloc_insert<std::pair<int, double> >(__gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > >, std::pair<int, double>&&) (vector.tcc:459)
+      n1: 2936256 0x10E4BB: emplace_back<std::pair<int, double> > (vector.tcc:123)
+       n1: 2936256 0x10E4BB: push_back (stl_vector.h:1299)
+        n1: 2936256 0x10E4BB: addEdge (graph.hpp:24)
+         n1: 2936256 0x10E4BB: addEdge (graph.hpp:19)
+          n0: 2936256 0x10E4BB: main (main.cpp:135)
+ n1: 1200000 0x10DA90: allocate (new_allocator.h:151)
+  n1: 1200000 0x10DA90: allocate (alloc_traits.h:482)
+   n1: 1200000 0x10DA90: _M_allocate (stl_vector.h:381)
+    n1: 1200000 0x10DA90: _M_allocate (stl_vector.h:378)
+     n1: 1200000 0x10DA90: _M_create_storage (stl_vector.h:398)
+      n1: 1200000 0x10DA90: _Vector_base (stl_vector.h:335)
+       n1: 1200000 0x10DA90: vector (stl_vector.h:557)
+        n1: 1200000 0x10DA90: Graph (graph.hpp:14)
+         n0: 1200000 0x10DA90: main (main.cpp:119)
+ n1: 1048576 0x110A96: allocate (new_allocator.h:151)
+  n1: 1048576 0x110A96: allocate (alloc_traits.h:482)
+   n1: 1048576 0x110A96: _M_allocate (stl_vector.h:381)
+    n1: 1048576 0x110A96: _M_allocate (stl_vector.h:378)
+     n1: 1048576 0x110A96: std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::pair<double, double>*, std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > > >, unsigned long, std::pair<double, double> const&) (vector.tcc:587)
+      n1: 1048576 0x10DD61: resize (stl_vector.h:1037)
+       n1: 1048576 0x10DD61: set_coords (graph.hpp:33)
+        n0: 1048576 0x10DD61: main (main.cpp:127)
+ n1: 400000 0x111837: allocate (new_allocator.h:151)
+  n1: 400000 0x111837: allocate (alloc_traits.h:482)
+   n1: 400000 0x111837: _M_allocate (stl_vector.h:381)
+    n1: 400000 0x111837: _M_allocate (stl_vector.h:378)
+     n1: 400000 0x111837: _M_create_storage (stl_vector.h:398)
+      n1: 400000 0x111837: _Vector_base (stl_vector.h:335)
+       n1: 400000 0x111837: vector (stl_vector.h:571)
+        n1: 400000 0x111837: dijkstra(Graph const&, int) (dijkstra.cpp:11)
+         n1: 400000 0x10FD49: operator() (main.cpp:170)
+          n1: 400000 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 400000 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 400000 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 400000 0x113786: operator() (std_function.h:591)
+              n1: 400000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 400000 0x10DEF9: main (main.cpp:170)
+ n1: 262144 0x11265A: allocate (new_allocator.h:151)
+  n1: 262144 0x11265A: allocate (alloc_traits.h:482)
+   n1: 262144 0x11265A: _M_allocate (stl_vector.h:381)
+    n1: 262144 0x11265A: _M_allocate (stl_vector.h:378)
+     n1: 262144 0x11265A: _M_realloc_insert<double&, int&> (vector.tcc:459)
+      n1: 262144 0x11265A: emplace_back<double&, int&> (vector.tcc:123)
+       n2: 262144 0x11265A: MinHeap::push(double, int) (minheap.hpp:27)
+        n1: 262144 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+         n1: 262144 0x10FD49: operator() (main.cpp:170)
+          n1: 262144 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 262144 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 262144 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 262144 0x113786: operator() (std_function.h:591)
+              n1: 262144 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 262144 0x10DEF9: main (main.cpp:170)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 208368 0x112229: allocate (new_allocator.h:151)
+  n1: 208368 0x112229: allocate (alloc_traits.h:482)
+   n1: 208368 0x112229: _M_allocate_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (hashtable_policy.h:1990)
+    n1: 208368 0x112229: _Scoped_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (hashtable.h:307)
+     n1: 208368 0x112229: std::__detail::_Map_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](int const&) (hashtable_policy.h:818)
+      n1: 208368 0x11244E: operator[] (unordered_map.h:987)
+       n2: 208368 0x11244E: MinHeap::push(double, int) (minheap.hpp:28)
+        n1: 208368 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+         n1: 208368 0x10FD49: operator() (main.cpp:170)
+          n1: 208368 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 208368 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 208368 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 208368 0x113786: operator() (std_function.h:591)
+              n1: 208368 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 208368 0x10DEF9: main (main.cpp:170)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 166024 0x11206D: allocate (new_allocator.h:151)
+  n1: 166024 0x11206D: allocate (alloc_traits.h:482)
+   n1: 166024 0x11206D: _M_allocate_buckets (hashtable_policy.h:2044)
+    n1: 166024 0x11206D: _M_allocate_buckets (hashtable.h:442)
+     n1: 166024 0x11206D: _M_rehash_aux (hashtable.h:2586)
+      n1: 166024 0x11206D: std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash(unsigned long, unsigned long const&) (hashtable.h:2565)
+       n1: 166024 0x1122A2: _M_insert_unique_node (hashtable.h:2179)
+        n1: 166024 0x1122A2: std::__detail::_Map_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](int const&) (hashtable_policy.h:825)
+         n1: 166024 0x11244E: operator[] (unordered_map.h:987)
+          n2: 166024 0x11244E: MinHeap::push(double, int) (minheap.hpp:28)
+           n1: 166024 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+            n1: 166024 0x10FD49: operator() (main.cpp:170)
+             n1: 166024 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+              n1: 166024 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+               n1: 166024 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+                n1: 166024 0x113786: operator() (std_function.h:591)
+                 n1: 166024 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                  n0: 166024 0x10DEF9: main (main.cpp:170)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 73728 0x496438E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n0: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 16100 in 18 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=407411224
+mem_heap_B=6293308
+mem_heap_extra_B=501516
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=446070857
+mem_heap_B=5839820
+mem_heap_extra_B=443436
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=480435051
+mem_heap_B=6337900
+mem_heap_extra_B=531524
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=519094678
+mem_heap_B=6267068
+mem_heap_extra_B=486508
+mem_stacks_B=0
+heap_tree=detailed
+n9: 6267068 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2936256 0x110EAE: allocate (new_allocator.h:151)
+  n1: 2936256 0x110EAE: allocate (alloc_traits.h:482)
+   n1: 2936256 0x110EAE: _M_allocate (stl_vector.h:381)
+    n1: 2936256 0x110EAE: _M_allocate (stl_vector.h:378)
+     n1: 2936256 0x110EAE: void std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >::_M_realloc_insert<std::pair<int, double> >(__gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > >, std::pair<int, double>&&) (vector.tcc:459)
+      n1: 2936256 0x10E4BB: emplace_back<std::pair<int, double> > (vector.tcc:123)
+       n1: 2936256 0x10E4BB: push_back (stl_vector.h:1299)
+        n1: 2936256 0x10E4BB: addEdge (graph.hpp:24)
+         n1: 2936256 0x10E4BB: addEdge (graph.hpp:19)
+          n0: 2936256 0x10E4BB: main (main.cpp:135)
+ n1: 1200000 0x10DA90: allocate (new_allocator.h:151)
+  n1: 1200000 0x10DA90: allocate (alloc_traits.h:482)
+   n1: 1200000 0x10DA90: _M_allocate (stl_vector.h:381)
+    n1: 1200000 0x10DA90: _M_allocate (stl_vector.h:378)
+     n1: 1200000 0x10DA90: _M_create_storage (stl_vector.h:398)
+      n1: 1200000 0x10DA90: _Vector_base (stl_vector.h:335)
+       n1: 1200000 0x10DA90: vector (stl_vector.h:557)
+        n1: 1200000 0x10DA90: Graph (graph.hpp:14)
+         n0: 1200000 0x10DA90: main (main.cpp:119)
+ n1: 1048576 0x110A96: allocate (new_allocator.h:151)
+  n1: 1048576 0x110A96: allocate (alloc_traits.h:482)
+   n1: 1048576 0x110A96: _M_allocate (stl_vector.h:381)
+    n1: 1048576 0x110A96: _M_allocate (stl_vector.h:378)
+     n1: 1048576 0x110A96: std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::pair<double, double>*, std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > > >, unsigned long, std::pair<double, double> const&) (vector.tcc:587)
+      n1: 1048576 0x10DD61: resize (stl_vector.h:1037)
+       n1: 1048576 0x10DD61: set_coords (graph.hpp:33)
+        n0: 1048576 0x10DD61: main (main.cpp:127)
+ n1: 400000 0x111837: allocate (new_allocator.h:151)
+  n1: 400000 0x111837: allocate (alloc_traits.h:482)
+   n1: 400000 0x111837: _M_allocate (stl_vector.h:381)
+    n1: 400000 0x111837: _M_allocate (stl_vector.h:378)
+     n1: 400000 0x111837: _M_create_storage (stl_vector.h:398)
+      n1: 400000 0x111837: _Vector_base (stl_vector.h:335)
+       n1: 400000 0x111837: vector (stl_vector.h:571)
+        n1: 400000 0x111837: dijkstra(Graph const&, int) (dijkstra.cpp:11)
+         n1: 400000 0x10FD49: operator() (main.cpp:170)
+          n1: 400000 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 400000 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 400000 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 400000 0x113786: operator() (std_function.h:591)
+              n1: 400000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 400000 0x10DEF9: main (main.cpp:170)
+ n1: 262144 0x11265A: allocate (new_allocator.h:151)
+  n1: 262144 0x11265A: allocate (alloc_traits.h:482)
+   n1: 262144 0x11265A: _M_allocate (stl_vector.h:381)
+    n1: 262144 0x11265A: _M_allocate (stl_vector.h:378)
+     n1: 262144 0x11265A: _M_realloc_insert<double&, int&> (vector.tcc:459)
+      n1: 262144 0x11265A: emplace_back<double&, int&> (vector.tcc:123)
+       n2: 262144 0x11265A: MinHeap::push(double, int) (minheap.hpp:27)
+        n1: 262144 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+         n1: 262144 0x10FD49: operator() (main.cpp:170)
+          n1: 262144 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 262144 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 262144 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 262144 0x113786: operator() (std_function.h:591)
+              n1: 262144 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 262144 0x10DEF9: main (main.cpp:170)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 166024 0x11206D: allocate (new_allocator.h:151)
+  n1: 166024 0x11206D: allocate (alloc_traits.h:482)
+   n1: 166024 0x11206D: _M_allocate_buckets (hashtable_policy.h:2044)
+    n1: 166024 0x11206D: _M_allocate_buckets (hashtable.h:442)
+     n1: 166024 0x11206D: _M_rehash_aux (hashtable.h:2586)
+      n1: 166024 0x11206D: std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash(unsigned long, unsigned long const&) (hashtable.h:2565)
+       n1: 166024 0x1122A2: _M_insert_unique_node (hashtable.h:2179)
+        n1: 166024 0x1122A2: std::__detail::_Map_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](int const&) (hashtable_policy.h:825)
+         n1: 166024 0x11244E: operator[] (unordered_map.h:987)
+          n2: 166024 0x11244E: MinHeap::push(double, int) (minheap.hpp:28)
+           n1: 166024 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+            n1: 166024 0x10FD49: operator() (main.cpp:170)
+             n1: 166024 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+              n1: 166024 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+               n1: 166024 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+                n1: 166024 0x113786: operator() (std_function.h:591)
+                 n1: 166024 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                  n0: 166024 0x10DEF9: main (main.cpp:170)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 164240 0x112229: allocate (new_allocator.h:151)
+  n1: 164240 0x112229: allocate (alloc_traits.h:482)
+   n1: 164240 0x112229: _M_allocate_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (hashtable_policy.h:1990)
+    n1: 164240 0x112229: _Scoped_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (hashtable.h:307)
+     n1: 164240 0x112229: std::__detail::_Map_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](int const&) (hashtable_policy.h:818)
+      n1: 164240 0x11244E: operator[] (unordered_map.h:987)
+       n2: 164240 0x11244E: MinHeap::push(double, int) (minheap.hpp:28)
+        n1: 164240 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+         n1: 164240 0x10FD49: operator() (main.cpp:170)
+          n1: 164240 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 164240 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 164240 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 164240 0x113786: operator() (std_function.h:591)
+              n1: 164240 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 164240 0x10DEF9: main (main.cpp:170)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 73728 0x496438E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n0: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 16100 in 18 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=549163771
+mem_heap_B=5820844
+mem_heap_extra_B=425788
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=566394930
+mem_heap_B=6275708
+mem_heap_extra_B=500412
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=600912766
+mem_heap_B=6336508
+mem_heap_extra_B=528492
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=631342822
+mem_heap_B=6231644
+mem_heap_extra_B=467244
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=661772007
+mem_heap_B=5998380
+mem_heap_extra_B=469204
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=683505973
+mem_heap_B=6325660
+mem_heap_extra_B=525404
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=713935219
+mem_heap_B=6319916
+mem_heap_extra_B=517380
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=744362233
+mem_heap_B=6185484
+mem_heap_extra_B=443140
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=789523522
+mem_heap_B=6471300
+mem_heap_extra_B=401684
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=820977404
+mem_heap_B=6471300
+mem_heap_extra_B=401684
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=842059895
+mem_heap_B=3269964
+mem_heap_extra_B=100
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=876233316
+mem_heap_B=5035180
+mem_heap_extra_B=200028
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=916702704
+mem_heap_B=6916524
+mem_heap_extra_B=610412
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=943726341
+mem_heap_B=8337164
+mem_heap_extra_B=719716
+mem_stacks_B=0
+heap_tree=detailed
+n4: 8337164 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3756480 0x110EAE: allocate (new_allocator.h:151)
+  n1: 3756480 0x110EAE: allocate (alloc_traits.h:482)
+   n1: 3756480 0x110EAE: _M_allocate (stl_vector.h:381)
+    n1: 3756480 0x110EAE: _M_allocate (stl_vector.h:378)
+     n1: 3756480 0x110EAE: void std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >::_M_realloc_insert<std::pair<int, double> >(__gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > >, std::pair<int, double>&&) (vector.tcc:459)
+      n1: 3756480 0x10E4BB: emplace_back<std::pair<int, double> > (vector.tcc:123)
+       n1: 3756480 0x10E4BB: push_back (stl_vector.h:1299)
+        n1: 3756480 0x10E4BB: addEdge (graph.hpp:24)
+         n1: 3756480 0x10E4BB: addEdge (graph.hpp:19)
+          n0: 3756480 0x10E4BB: main (main.cpp:135)
+ n1: 2400000 0x10DA90: allocate (new_allocator.h:151)
+  n1: 2400000 0x10DA90: allocate (alloc_traits.h:482)
+   n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:381)
+    n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:378)
+     n1: 2400000 0x10DA90: _M_create_storage (stl_vector.h:398)
+      n1: 2400000 0x10DA90: _Vector_base (stl_vector.h:335)
+       n1: 2400000 0x10DA90: vector (stl_vector.h:557)
+        n1: 2400000 0x10DA90: Graph (graph.hpp:14)
+         n0: 2400000 0x10DA90: main (main.cpp:119)
+ n1: 2097152 0x110A96: allocate (new_allocator.h:151)
+  n1: 2097152 0x110A96: allocate (alloc_traits.h:482)
+   n1: 2097152 0x110A96: _M_allocate (stl_vector.h:381)
+    n1: 2097152 0x110A96: _M_allocate (stl_vector.h:378)
+     n1: 2097152 0x110A96: std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::pair<double, double>*, std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > > >, unsigned long, std::pair<double, double> const&) (vector.tcc:587)
+      n1: 2097152 0x10DD61: resize (stl_vector.h:1037)
+       n1: 2097152 0x10DD61: set_coords (graph.hpp:33)
+        n0: 2097152 0x10DD61: main (main.cpp:127)
+ n0: 83532 in 25 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=973425371
+mem_heap_B=10042892
+mem_heap_extra_B=791236
+mem_stacks_B=0
+heap_tree=detailed
+n4: 10042892 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5462208 0x110EAE: allocate (new_allocator.h:151)
+  n1: 5462208 0x110EAE: allocate (alloc_traits.h:482)
+   n1: 5462208 0x110EAE: _M_allocate (stl_vector.h:381)
+    n1: 5462208 0x110EAE: _M_allocate (stl_vector.h:378)
+     n1: 5462208 0x110EAE: void std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >::_M_realloc_insert<std::pair<int, double> >(__gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > >, std::pair<int, double>&&) (vector.tcc:459)
+      n1: 5462208 0x10E4BB: emplace_back<std::pair<int, double> > (vector.tcc:123)
+       n1: 5462208 0x10E4BB: push_back (stl_vector.h:1299)
+        n1: 5462208 0x10E4BB: addEdge (graph.hpp:24)
+         n1: 5462208 0x10E4BB: addEdge (graph.hpp:19)
+          n0: 5462208 0x10E4BB: main (main.cpp:135)
+ n1: 2400000 0x10DA90: allocate (new_allocator.h:151)
+  n1: 2400000 0x10DA90: allocate (alloc_traits.h:482)
+   n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:381)
+    n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:378)
+     n1: 2400000 0x10DA90: _M_create_storage (stl_vector.h:398)
+      n1: 2400000 0x10DA90: _Vector_base (stl_vector.h:335)
+       n1: 2400000 0x10DA90: vector (stl_vector.h:557)
+        n1: 2400000 0x10DA90: Graph (graph.hpp:14)
+         n0: 2400000 0x10DA90: main (main.cpp:119)
+ n1: 2097152 0x110A96: allocate (new_allocator.h:151)
+  n1: 2097152 0x110A96: allocate (alloc_traits.h:482)
+   n1: 2097152 0x110A96: _M_allocate (stl_vector.h:381)
+    n1: 2097152 0x110A96: _M_allocate (stl_vector.h:378)
+     n1: 2097152 0x110A96: std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::pair<double, double>*, std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > > >, unsigned long, std::pair<double, double> const&) (vector.tcc:587)
+      n1: 2097152 0x10DD61: resize (stl_vector.h:1037)
+       n1: 2097152 0x10DD61: set_coords (graph.hpp:33)
+        n0: 2097152 0x10DD61: main (main.cpp:127)
+ n0: 83532 in 25 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=993062631
+mem_heap_B=11877076
+mem_heap_extra_B=893540
+mem_stacks_B=0
+heap_tree=detailed
+n7: 11877076 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5877376 0x110EAE: allocate (new_allocator.h:151)
+  n1: 5877376 0x110EAE: allocate (alloc_traits.h:482)
+   n1: 5877376 0x110EAE: _M_allocate (stl_vector.h:381)
+    n1: 5877376 0x110EAE: _M_allocate (stl_vector.h:378)
+     n1: 5877376 0x110EAE: void std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >::_M_realloc_insert<std::pair<int, double> >(__gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > >, std::pair<int, double>&&) (vector.tcc:459)
+      n1: 5877376 0x10E4BB: emplace_back<std::pair<int, double> > (vector.tcc:123)
+       n1: 5877376 0x10E4BB: push_back (stl_vector.h:1299)
+        n1: 5877376 0x10E4BB: addEdge (graph.hpp:24)
+         n1: 5877376 0x10E4BB: addEdge (graph.hpp:19)
+          n0: 5877376 0x10E4BB: main (main.cpp:135)
+ n1: 2400000 0x10DA90: allocate (new_allocator.h:151)
+  n1: 2400000 0x10DA90: allocate (alloc_traits.h:482)
+   n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:381)
+    n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:378)
+     n1: 2400000 0x10DA90: _M_create_storage (stl_vector.h:398)
+      n1: 2400000 0x10DA90: _Vector_base (stl_vector.h:335)
+       n1: 2400000 0x10DA90: vector (stl_vector.h:557)
+        n1: 2400000 0x10DA90: Graph (graph.hpp:14)
+         n0: 2400000 0x10DA90: main (main.cpp:119)
+ n1: 2097152 0x110A96: allocate (new_allocator.h:151)
+  n1: 2097152 0x110A96: allocate (alloc_traits.h:482)
+   n1: 2097152 0x110A96: _M_allocate (stl_vector.h:381)
+    n1: 2097152 0x110A96: _M_allocate (stl_vector.h:378)
+     n1: 2097152 0x110A96: std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::pair<double, double>*, std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > > >, unsigned long, std::pair<double, double> const&) (vector.tcc:587)
+      n1: 2097152 0x10DD61: resize (stl_vector.h:1037)
+       n1: 2097152 0x10DD61: set_coords (graph.hpp:33)
+        n0: 2097152 0x10DD61: main (main.cpp:127)
+ n1: 800000 0x111837: allocate (new_allocator.h:151)
+  n1: 800000 0x111837: allocate (alloc_traits.h:482)
+   n1: 800000 0x111837: _M_allocate (stl_vector.h:381)
+    n1: 800000 0x111837: _M_allocate (stl_vector.h:378)
+     n1: 800000 0x111837: _M_create_storage (stl_vector.h:398)
+      n1: 800000 0x111837: _Vector_base (stl_vector.h:335)
+       n1: 800000 0x111837: vector (stl_vector.h:571)
+        n1: 800000 0x111837: dijkstra(Graph const&, int) (dijkstra.cpp:11)
+         n1: 800000 0x10FD49: operator() (main.cpp:170)
+          n1: 800000 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 800000 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 800000 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 800000 0x113786: operator() (std_function.h:591)
+              n1: 800000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 800000 0x10DEF9: main (main.cpp:170)
+ n1: 393216 0x11265A: allocate (new_allocator.h:151)
+  n1: 393216 0x11265A: allocate (alloc_traits.h:482)
+   n1: 393216 0x11265A: _M_allocate (stl_vector.h:381)
+    n1: 393216 0x11265A: _M_allocate (stl_vector.h:378)
+     n1: 393216 0x11265A: _M_realloc_insert<double&, int&> (vector.tcc:459)
+      n1: 393216 0x11265A: emplace_back<double&, int&> (vector.tcc:123)
+       n2: 393216 0x11265A: MinHeap::push(double, int) (minheap.hpp:27)
+        n1: 393216 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+         n1: 393216 0x10FD49: operator() (main.cpp:170)
+          n1: 393216 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 393216 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 393216 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 393216 0x113786: operator() (std_function.h:591)
+              n1: 393216 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 393216 0x10DEF9: main (main.cpp:170)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 178260 in 22 places, all below massif's threshold (1.00%)
+ n1: 131072 0x112229: allocate (new_allocator.h:151)
+  n1: 131072 0x112229: allocate (alloc_traits.h:482)
+   n1: 131072 0x112229: _M_allocate_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (hashtable_policy.h:1990)
+    n1: 131072 0x112229: _Scoped_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (hashtable.h:307)
+     n1: 131072 0x112229: std::__detail::_Map_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](int const&) (hashtable_policy.h:818)
+      n1: 131072 0x11244E: operator[] (unordered_map.h:987)
+       n2: 131072 0x11244E: MinHeap::push(double, int) (minheap.hpp:28)
+        n1: 131072 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+         n1: 131072 0x10FD49: operator() (main.cpp:170)
+          n1: 131072 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 131072 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 131072 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 131072 0x113786: operator() (std_function.h:591)
+              n1: 131072 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 131072 0x10DEF9: main (main.cpp:170)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=1021857323
+mem_heap_B=12629324
+mem_heap_extra_B=994044
+mem_stacks_B=0
+heap_tree=detailed
+n8: 12629324 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5877376 0x110EAE: allocate (new_allocator.h:151)
+  n1: 5877376 0x110EAE: allocate (alloc_traits.h:482)
+   n1: 5877376 0x110EAE: _M_allocate (stl_vector.h:381)
+    n1: 5877376 0x110EAE: _M_allocate (stl_vector.h:378)
+     n1: 5877376 0x110EAE: void std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >::_M_realloc_insert<std::pair<int, double> >(__gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > >, std::pair<int, double>&&) (vector.tcc:459)
+      n1: 5877376 0x10E4BB: emplace_back<std::pair<int, double> > (vector.tcc:123)
+       n1: 5877376 0x10E4BB: push_back (stl_vector.h:1299)
+        n1: 5877376 0x10E4BB: addEdge (graph.hpp:24)
+         n1: 5877376 0x10E4BB: addEdge (graph.hpp:19)
+          n0: 5877376 0x10E4BB: main (main.cpp:135)
+ n1: 2400000 0x10DA90: allocate (new_allocator.h:151)
+  n1: 2400000 0x10DA90: allocate (alloc_traits.h:482)
+   n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:381)
+    n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:378)
+     n1: 2400000 0x10DA90: _M_create_storage (stl_vector.h:398)
+      n1: 2400000 0x10DA90: _Vector_base (stl_vector.h:335)
+       n1: 2400000 0x10DA90: vector (stl_vector.h:557)
+        n1: 2400000 0x10DA90: Graph (graph.hpp:14)
+         n0: 2400000 0x10DA90: main (main.cpp:119)
+ n1: 2097152 0x110A96: allocate (new_allocator.h:151)
+  n1: 2097152 0x110A96: allocate (alloc_traits.h:482)
+   n1: 2097152 0x110A96: _M_allocate (stl_vector.h:381)
+    n1: 2097152 0x110A96: _M_allocate (stl_vector.h:378)
+     n1: 2097152 0x110A96: std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::pair<double, double>*, std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > > >, unsigned long, std::pair<double, double> const&) (vector.tcc:587)
+      n1: 2097152 0x10DD61: resize (stl_vector.h:1037)
+       n1: 2097152 0x10DD61: set_coords (graph.hpp:33)
+        n0: 2097152 0x10DD61: main (main.cpp:127)
+ n1: 800000 0x111837: allocate (new_allocator.h:151)
+  n1: 800000 0x111837: allocate (alloc_traits.h:482)
+   n1: 800000 0x111837: _M_allocate (stl_vector.h:381)
+    n1: 800000 0x111837: _M_allocate (stl_vector.h:378)
+     n1: 800000 0x111837: _M_create_storage (stl_vector.h:398)
+      n1: 800000 0x111837: _Vector_base (stl_vector.h:335)
+       n1: 800000 0x111837: vector (stl_vector.h:571)
+        n1: 800000 0x111837: dijkstra(Graph const&, int) (dijkstra.cpp:11)
+         n1: 800000 0x10FD49: operator() (main.cpp:170)
+          n1: 800000 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 800000 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 800000 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 800000 0x113786: operator() (std_function.h:591)
+              n1: 800000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 800000 0x10DEF9: main (main.cpp:170)
+ n1: 524288 0x11265A: allocate (new_allocator.h:151)
+  n1: 524288 0x11265A: allocate (alloc_traits.h:482)
+   n1: 524288 0x11265A: _M_allocate (stl_vector.h:381)
+    n1: 524288 0x11265A: _M_allocate (stl_vector.h:378)
+     n1: 524288 0x11265A: _M_realloc_insert<double&, int&> (vector.tcc:459)
+      n1: 524288 0x11265A: emplace_back<double&, int&> (vector.tcc:123)
+       n2: 524288 0x11265A: MinHeap::push(double, int) (minheap.hpp:27)
+        n1: 524288 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+         n1: 524288 0x10FD49: operator() (main.cpp:170)
+          n1: 524288 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 524288 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 524288 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 524288 0x113786: operator() (std_function.h:591)
+              n1: 524288 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 524288 0x10DEF9: main (main.cpp:170)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 502368 0x11206D: allocate (new_allocator.h:151)
+  n1: 502368 0x11206D: allocate (alloc_traits.h:482)
+   n1: 502368 0x11206D: _M_allocate_buckets (hashtable_policy.h:2044)
+    n1: 502368 0x11206D: _M_allocate_buckets (hashtable.h:442)
+     n1: 502368 0x11206D: _M_rehash_aux (hashtable.h:2586)
+      n1: 502368 0x11206D: std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash(unsigned long, unsigned long const&) (hashtable.h:2565)
+       n1: 502368 0x1122A2: _M_insert_unique_node (hashtable.h:2179)
+        n1: 502368 0x1122A2: std::__detail::_Map_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](int const&) (hashtable_policy.h:825)
+         n1: 502368 0x11244E: operator[] (unordered_map.h:987)
+          n2: 502368 0x11244E: MinHeap::push(double, int) (minheap.hpp:28)
+           n1: 502368 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+            n1: 502368 0x10FD49: operator() (main.cpp:170)
+             n1: 502368 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+              n1: 502368 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+               n1: 502368 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+                n1: 502368 0x113786: operator() (std_function.h:591)
+                 n1: 502368 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                  n0: 502368 0x10DEF9: main (main.cpp:170)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 332064 0x112229: allocate (new_allocator.h:151)
+  n1: 332064 0x112229: allocate (alloc_traits.h:482)
+   n1: 332064 0x112229: _M_allocate_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (hashtable_policy.h:1990)
+    n1: 332064 0x112229: _Scoped_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (hashtable.h:307)
+     n1: 332064 0x112229: std::__detail::_Map_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](int const&) (hashtable_policy.h:818)
+      n1: 332064 0x11244E: operator[] (unordered_map.h:987)
+       n2: 332064 0x11244E: MinHeap::push(double, int) (minheap.hpp:28)
+        n1: 332064 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+         n1: 332064 0x10FD49: operator() (main.cpp:170)
+          n1: 332064 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 332064 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 332064 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 332064 0x113786: operator() (std_function.h:591)
+              n1: 332064 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 332064 0x10DEF9: main (main.cpp:170)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 96076 in 21 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=1044962629
+mem_heap_B=12562436
+mem_heap_extra_B=1043596
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=1068067930
+mem_heap_B=12608436
+mem_heap_extra_B=1066580
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=1091172946
+mem_heap_B=12606964
+mem_heap_extra_B=1062324
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=1137381670
+mem_heap_B=12494164
+mem_heap_extra_B=991636
+mem_stacks_B=0
+heap_tree=detailed
+n8: 12494164 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5877376 0x110EAE: allocate (new_allocator.h:151)
+  n1: 5877376 0x110EAE: allocate (alloc_traits.h:482)
+   n1: 5877376 0x110EAE: _M_allocate (stl_vector.h:381)
+    n1: 5877376 0x110EAE: _M_allocate (stl_vector.h:378)
+     n1: 5877376 0x110EAE: void std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >::_M_realloc_insert<std::pair<int, double> >(__gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > >, std::pair<int, double>&&) (vector.tcc:459)
+      n1: 5877376 0x10E4BB: emplace_back<std::pair<int, double> > (vector.tcc:123)
+       n1: 5877376 0x10E4BB: push_back (stl_vector.h:1299)
+        n1: 5877376 0x10E4BB: addEdge (graph.hpp:24)
+         n1: 5877376 0x10E4BB: addEdge (graph.hpp:19)
+          n0: 5877376 0x10E4BB: main (main.cpp:135)
+ n1: 2400000 0x10DA90: allocate (new_allocator.h:151)
+  n1: 2400000 0x10DA90: allocate (alloc_traits.h:482)
+   n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:381)
+    n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:378)
+     n1: 2400000 0x10DA90: _M_create_storage (stl_vector.h:398)
+      n1: 2400000 0x10DA90: _Vector_base (stl_vector.h:335)
+       n1: 2400000 0x10DA90: vector (stl_vector.h:557)
+        n1: 2400000 0x10DA90: Graph (graph.hpp:14)
+         n0: 2400000 0x10DA90: main (main.cpp:119)
+ n1: 2097152 0x110A96: allocate (new_allocator.h:151)
+  n1: 2097152 0x110A96: allocate (alloc_traits.h:482)
+   n1: 2097152 0x110A96: _M_allocate (stl_vector.h:381)
+    n1: 2097152 0x110A96: _M_allocate (stl_vector.h:378)
+     n1: 2097152 0x110A96: std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::pair<double, double>*, std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > > >, unsigned long, std::pair<double, double> const&) (vector.tcc:587)
+      n1: 2097152 0x10DD61: resize (stl_vector.h:1037)
+       n1: 2097152 0x10DD61: set_coords (graph.hpp:33)
+        n0: 2097152 0x10DD61: main (main.cpp:127)
+ n1: 800000 0x111837: allocate (new_allocator.h:151)
+  n1: 800000 0x111837: allocate (alloc_traits.h:482)
+   n1: 800000 0x111837: _M_allocate (stl_vector.h:381)
+    n1: 800000 0x111837: _M_allocate (stl_vector.h:378)
+     n1: 800000 0x111837: _M_create_storage (stl_vector.h:398)
+      n1: 800000 0x111837: _Vector_base (stl_vector.h:335)
+       n1: 800000 0x111837: vector (stl_vector.h:571)
+        n1: 800000 0x111837: dijkstra(Graph const&, int) (dijkstra.cpp:11)
+         n1: 800000 0x10FD49: operator() (main.cpp:170)
+          n1: 800000 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 800000 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 800000 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 800000 0x113786: operator() (std_function.h:591)
+              n1: 800000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 800000 0x10DEF9: main (main.cpp:170)
+ n1: 524288 0x11265A: allocate (new_allocator.h:151)
+  n1: 524288 0x11265A: allocate (alloc_traits.h:482)
+   n1: 524288 0x11265A: _M_allocate (stl_vector.h:381)
+    n1: 524288 0x11265A: _M_allocate (stl_vector.h:378)
+     n1: 524288 0x11265A: _M_realloc_insert<double&, int&> (vector.tcc:459)
+      n1: 524288 0x11265A: emplace_back<double&, int&> (vector.tcc:123)
+       n2: 524288 0x11265A: MinHeap::push(double, int) (minheap.hpp:27)
+        n1: 524288 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+         n1: 524288 0x10FD49: operator() (main.cpp:170)
+          n1: 524288 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 524288 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 524288 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 524288 0x113786: operator() (std_function.h:591)
+              n1: 524288 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 524288 0x10DEF9: main (main.cpp:170)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 362928 0x112229: allocate (new_allocator.h:151)
+  n1: 362928 0x112229: allocate (alloc_traits.h:482)
+   n1: 362928 0x112229: _M_allocate_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (hashtable_policy.h:1990)
+    n1: 362928 0x112229: _Scoped_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (hashtable.h:307)
+     n1: 362928 0x112229: std::__detail::_Map_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](int const&) (hashtable_policy.h:818)
+      n1: 362928 0x11244E: operator[] (unordered_map.h:987)
+       n2: 362928 0x11244E: MinHeap::push(double, int) (minheap.hpp:28)
+        n1: 362928 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+         n1: 362928 0x10FD49: operator() (main.cpp:170)
+          n1: 362928 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 362928 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 362928 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 362928 0x113786: operator() (std_function.h:591)
+              n1: 362928 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 362928 0x10DEF9: main (main.cpp:170)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 336344 0x11206D: allocate (new_allocator.h:151)
+  n1: 336344 0x11206D: allocate (alloc_traits.h:482)
+   n1: 336344 0x11206D: _M_allocate_buckets (hashtable_policy.h:2044)
+    n1: 336344 0x11206D: _M_allocate_buckets (hashtable.h:442)
+     n1: 336344 0x11206D: _M_rehash_aux (hashtable.h:2586)
+      n1: 336344 0x11206D: std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash(unsigned long, unsigned long const&) (hashtable.h:2565)
+       n1: 336344 0x1122A2: _M_insert_unique_node (hashtable.h:2179)
+        n1: 336344 0x1122A2: std::__detail::_Map_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](int const&) (hashtable_policy.h:825)
+         n1: 336344 0x11244E: operator[] (unordered_map.h:987)
+          n2: 336344 0x11244E: MinHeap::push(double, int) (minheap.hpp:28)
+           n1: 336344 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+            n1: 336344 0x10FD49: operator() (main.cpp:170)
+             n1: 336344 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+              n1: 336344 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+               n1: 336344 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+                n1: 336344 0x113786: operator() (std_function.h:591)
+                 n1: 336344 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                  n0: 336344 0x10DEF9: main (main.cpp:170)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 96076 in 21 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=37
+#-----------
+time=1172040365
+mem_heap_B=12333908
+mem_heap_extra_B=905476
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=1206697293
+mem_heap_B=11420724
+mem_heap_extra_B=825124
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=1241355632
+mem_heap_B=12280772
+mem_heap_extra_B=987908
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=1264460568
+mem_heap_B=12553636
+mem_heap_extra_B=1039196
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=1287565470
+mem_heap_B=12605732
+mem_heap_extra_B=1065228
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=1310670961
+mem_heap_B=12609652
+mem_heap_extra_B=1064708
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=1356878368
+mem_heap_B=12505156
+mem_heap_extra_B=997948
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=1379983008
+mem_heap_B=12408324
+mem_heap_extra_B=944540
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=1414640465
+mem_heap_B=12210004
+mem_heap_extra_B=842564
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=1449295966
+mem_heap_B=11924548
+mem_heap_extra_B=940868
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=1495505674
+mem_heap_B=12578996
+mem_heap_extra_B=1051860
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=1518612311
+mem_heap_B=12611748
+mem_heap_extra_B=1068236
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=1553269482
+mem_heap_B=12580436
+mem_heap_extra_B=1043108
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=1570500811
+mem_heap_B=12535796
+mem_heap_extra_B=1015572
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=1587732272
+mem_heap_B=12472916
+mem_heap_extra_B=979668
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=1604965260
+mem_heap_B=12395940
+mem_heap_extra_B=937980
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=1622197482
+mem_heap_B=12303252
+mem_heap_extra_B=889588
+mem_stacks_B=0
+heap_tree=detailed
+n8: 12303252 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5877376 0x110EAE: allocate (new_allocator.h:151)
+  n1: 5877376 0x110EAE: allocate (alloc_traits.h:482)
+   n1: 5877376 0x110EAE: _M_allocate (stl_vector.h:381)
+    n1: 5877376 0x110EAE: _M_allocate (stl_vector.h:378)
+     n1: 5877376 0x110EAE: void std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >::_M_realloc_insert<std::pair<int, double> >(__gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > >, std::pair<int, double>&&) (vector.tcc:459)
+      n1: 5877376 0x10E4BB: emplace_back<std::pair<int, double> > (vector.tcc:123)
+       n1: 5877376 0x10E4BB: push_back (stl_vector.h:1299)
+        n1: 5877376 0x10E4BB: addEdge (graph.hpp:24)
+         n1: 5877376 0x10E4BB: addEdge (graph.hpp:19)
+          n0: 5877376 0x10E4BB: main (main.cpp:135)
+ n1: 2400000 0x10DA90: allocate (new_allocator.h:151)
+  n1: 2400000 0x10DA90: allocate (alloc_traits.h:482)
+   n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:381)
+    n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:378)
+     n1: 2400000 0x10DA90: _M_create_storage (stl_vector.h:398)
+      n1: 2400000 0x10DA90: _Vector_base (stl_vector.h:335)
+       n1: 2400000 0x10DA90: vector (stl_vector.h:557)
+        n1: 2400000 0x10DA90: Graph (graph.hpp:14)
+         n0: 2400000 0x10DA90: main (main.cpp:119)
+ n1: 2097152 0x110A96: allocate (new_allocator.h:151)
+  n1: 2097152 0x110A96: allocate (alloc_traits.h:482)
+   n1: 2097152 0x110A96: _M_allocate (stl_vector.h:381)
+    n1: 2097152 0x110A96: _M_allocate (stl_vector.h:378)
+     n1: 2097152 0x110A96: std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::pair<double, double>*, std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > > >, unsigned long, std::pair<double, double> const&) (vector.tcc:587)
+      n1: 2097152 0x10DD61: resize (stl_vector.h:1037)
+       n1: 2097152 0x10DD61: set_coords (graph.hpp:33)
+        n0: 2097152 0x10DD61: main (main.cpp:127)
+ n1: 800000 0x111837: allocate (new_allocator.h:151)
+  n1: 800000 0x111837: allocate (alloc_traits.h:482)
+   n1: 800000 0x111837: _M_allocate (stl_vector.h:381)
+    n1: 800000 0x111837: _M_allocate (stl_vector.h:378)
+     n1: 800000 0x111837: _M_create_storage (stl_vector.h:398)
+      n1: 800000 0x111837: _Vector_base (stl_vector.h:335)
+       n1: 800000 0x111837: vector (stl_vector.h:571)
+        n1: 800000 0x111837: dijkstra(Graph const&, int) (dijkstra.cpp:11)
+         n1: 800000 0x10FD49: operator() (main.cpp:170)
+          n1: 800000 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 800000 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 800000 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 800000 0x113786: operator() (std_function.h:591)
+              n1: 800000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 800000 0x10DEF9: main (main.cpp:170)
+ n1: 524288 0x11265A: allocate (new_allocator.h:151)
+  n1: 524288 0x11265A: allocate (alloc_traits.h:482)
+   n1: 524288 0x11265A: _M_allocate (stl_vector.h:381)
+    n1: 524288 0x11265A: _M_allocate (stl_vector.h:378)
+     n1: 524288 0x11265A: _M_realloc_insert<double&, int&> (vector.tcc:459)
+      n1: 524288 0x11265A: emplace_back<double&, int&> (vector.tcc:123)
+       n2: 524288 0x11265A: MinHeap::push(double, int) (minheap.hpp:27)
+        n1: 524288 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+         n1: 524288 0x10FD49: operator() (main.cpp:170)
+          n1: 524288 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 524288 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 524288 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 524288 0x113786: operator() (std_function.h:591)
+              n1: 524288 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 524288 0x10DEF9: main (main.cpp:170)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 336344 0x11206D: allocate (new_allocator.h:151)
+  n1: 336344 0x11206D: allocate (alloc_traits.h:482)
+   n1: 336344 0x11206D: _M_allocate_buckets (hashtable_policy.h:2044)
+    n1: 336344 0x11206D: _M_allocate_buckets (hashtable.h:442)
+     n1: 336344 0x11206D: _M_rehash_aux (hashtable.h:2586)
+      n1: 336344 0x11206D: std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash(unsigned long, unsigned long const&) (hashtable.h:2565)
+       n1: 336344 0x1122A2: _M_insert_unique_node (hashtable.h:2179)
+        n1: 336344 0x1122A2: std::__detail::_Map_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](int const&) (hashtable_policy.h:825)
+         n1: 336344 0x11244E: operator[] (unordered_map.h:987)
+          n2: 336344 0x11244E: MinHeap::push(double, int) (minheap.hpp:28)
+           n1: 336344 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+            n1: 336344 0x10FD49: operator() (main.cpp:170)
+             n1: 336344 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+              n1: 336344 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+               n1: 336344 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+                n1: 336344 0x113786: operator() (std_function.h:591)
+                 n1: 336344 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                  n0: 336344 0x10DEF9: main (main.cpp:170)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 172016 0x112229: allocate (new_allocator.h:151)
+  n1: 172016 0x112229: allocate (alloc_traits.h:482)
+   n1: 172016 0x112229: _M_allocate_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (hashtable_policy.h:1990)
+    n1: 172016 0x112229: _Scoped_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (hashtable.h:307)
+     n1: 172016 0x112229: std::__detail::_Map_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](int const&) (hashtable_policy.h:818)
+      n1: 172016 0x11244E: operator[] (unordered_map.h:987)
+       n2: 172016 0x11244E: MinHeap::push(double, int) (minheap.hpp:28)
+        n1: 172016 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+         n1: 172016 0x10FD49: operator() (main.cpp:170)
+          n1: 172016 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 172016 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 172016 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 172016 0x113786: operator() (std_function.h:591)
+              n1: 172016 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 172016 0x10DEF9: main (main.cpp:170)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 96076 in 21 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=54
+#-----------
+time=1639429954
+mem_heap_B=12193556
+mem_heap_extra_B=834340
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=1656661246
+mem_heap_B=11580132
+mem_heap_extra_B=875284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=1673893682
+mem_heap_B=11940884
+mem_heap_extra_B=949052
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=1691126353
+mem_heap_B=12474692
+mem_heap_extra_B=999724
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=1708357819
+mem_heap_B=12550196
+mem_heap_extra_B=1037460
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=1725591051
+mem_heap_B=12595172
+mem_heap_extra_B=1059964
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=1742822751
+mem_heap_B=12612900
+mem_heap_extra_B=1068732
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=1760054447
+mem_heap_B=12604948
+mem_heap_extra_B=1060884
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=1777285850
+mem_heap_B=12577028
+mem_heap_extra_B=1040876
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=1794517445
+mem_heap_B=12530052
+mem_heap_extra_B=1012252
+mem_stacks_B=0
+heap_tree=detailed
+n8: 12530052 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5877376 0x110EAE: allocate (new_allocator.h:151)
+  n1: 5877376 0x110EAE: allocate (alloc_traits.h:482)
+   n1: 5877376 0x110EAE: _M_allocate (stl_vector.h:381)
+    n1: 5877376 0x110EAE: _M_allocate (stl_vector.h:378)
+     n1: 5877376 0x110EAE: void std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >::_M_realloc_insert<std::pair<int, double> >(__gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > >, std::pair<int, double>&&) (vector.tcc:459)
+      n1: 5877376 0x10E4BB: emplace_back<std::pair<int, double> > (vector.tcc:123)
+       n1: 5877376 0x10E4BB: push_back (stl_vector.h:1299)
+        n1: 5877376 0x10E4BB: addEdge (graph.hpp:24)
+         n1: 5877376 0x10E4BB: addEdge (graph.hpp:19)
+          n0: 5877376 0x10E4BB: main (main.cpp:135)
+ n1: 2400000 0x10DA90: allocate (new_allocator.h:151)
+  n1: 2400000 0x10DA90: allocate (alloc_traits.h:482)
+   n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:381)
+    n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:378)
+     n1: 2400000 0x10DA90: _M_create_storage (stl_vector.h:398)
+      n1: 2400000 0x10DA90: _Vector_base (stl_vector.h:335)
+       n1: 2400000 0x10DA90: vector (stl_vector.h:557)
+        n1: 2400000 0x10DA90: Graph (graph.hpp:14)
+         n0: 2400000 0x10DA90: main (main.cpp:119)
+ n1: 2097152 0x110A96: allocate (new_allocator.h:151)
+  n1: 2097152 0x110A96: allocate (alloc_traits.h:482)
+   n1: 2097152 0x110A96: _M_allocate (stl_vector.h:381)
+    n1: 2097152 0x110A96: _M_allocate (stl_vector.h:378)
+     n1: 2097152 0x110A96: std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::pair<double, double>*, std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > > >, unsigned long, std::pair<double, double> const&) (vector.tcc:587)
+      n1: 2097152 0x10DD61: resize (stl_vector.h:1037)
+       n1: 2097152 0x10DD61: set_coords (graph.hpp:33)
+        n0: 2097152 0x10DD61: main (main.cpp:127)
+ n1: 800000 0x111837: allocate (new_allocator.h:151)
+  n1: 800000 0x111837: allocate (alloc_traits.h:482)
+   n1: 800000 0x111837: _M_allocate (stl_vector.h:381)
+    n1: 800000 0x111837: _M_allocate (stl_vector.h:378)
+     n1: 800000 0x111837: _M_create_storage (stl_vector.h:398)
+      n1: 800000 0x111837: _Vector_base (stl_vector.h:335)
+       n1: 800000 0x111837: vector (stl_vector.h:571)
+        n1: 800000 0x111837: dijkstra(Graph const&, int) (dijkstra.cpp:11)
+         n1: 800000 0x10FD49: operator() (main.cpp:170)
+          n1: 800000 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 800000 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 800000 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 800000 0x113786: operator() (std_function.h:591)
+              n1: 800000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 800000 0x10DEF9: main (main.cpp:170)
+ n1: 524288 0x11265A: allocate (new_allocator.h:151)
+  n1: 524288 0x11265A: allocate (alloc_traits.h:482)
+   n1: 524288 0x11265A: _M_allocate (stl_vector.h:381)
+    n1: 524288 0x11265A: _M_allocate (stl_vector.h:378)
+     n1: 524288 0x11265A: _M_realloc_insert<double&, int&> (vector.tcc:459)
+      n1: 524288 0x11265A: emplace_back<double&, int&> (vector.tcc:123)
+       n2: 524288 0x11265A: MinHeap::push(double, int) (minheap.hpp:27)
+        n1: 524288 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+         n1: 524288 0x10FD49: operator() (main.cpp:170)
+          n1: 524288 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 524288 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 524288 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 524288 0x113786: operator() (std_function.h:591)
+              n1: 524288 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 524288 0x10DEF9: main (main.cpp:170)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 398816 0x112229: allocate (new_allocator.h:151)
+  n1: 398816 0x112229: allocate (alloc_traits.h:482)
+   n1: 398816 0x112229: _M_allocate_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (hashtable_policy.h:1990)
+    n1: 398816 0x112229: _Scoped_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (hashtable.h:307)
+     n1: 398816 0x112229: std::__detail::_Map_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](int const&) (hashtable_policy.h:818)
+      n1: 398816 0x11244E: operator[] (unordered_map.h:987)
+       n2: 398816 0x11244E: MinHeap::push(double, int) (minheap.hpp:28)
+        n1: 398816 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+         n1: 398816 0x10FD49: operator() (main.cpp:170)
+          n1: 398816 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 398816 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 398816 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 398816 0x113786: operator() (std_function.h:591)
+              n1: 398816 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 398816 0x10DEF9: main (main.cpp:170)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 336344 0x11206D: allocate (new_allocator.h:151)
+  n1: 336344 0x11206D: allocate (alloc_traits.h:482)
+   n1: 336344 0x11206D: _M_allocate_buckets (hashtable_policy.h:2044)
+    n1: 336344 0x11206D: _M_allocate_buckets (hashtable.h:442)
+     n1: 336344 0x11206D: _M_rehash_aux (hashtable.h:2586)
+      n1: 336344 0x11206D: std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash(unsigned long, unsigned long const&) (hashtable.h:2565)
+       n1: 336344 0x1122A2: _M_insert_unique_node (hashtable.h:2179)
+        n1: 336344 0x1122A2: std::__detail::_Map_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](int const&) (hashtable_policy.h:825)
+         n1: 336344 0x11244E: operator[] (unordered_map.h:987)
+          n2: 336344 0x11244E: MinHeap::push(double, int) (minheap.hpp:28)
+           n1: 336344 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+            n1: 336344 0x10FD49: operator() (main.cpp:170)
+             n1: 336344 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+              n1: 336344 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+               n1: 336344 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+                n1: 336344 0x113786: operator() (std_function.h:591)
+                 n1: 336344 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                  n0: 336344 0x10DEF9: main (main.cpp:170)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 96076 in 21 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=64
+#-----------
+time=1811749299
+mem_heap_B=12466820
+mem_heap_extra_B=976268
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=1828982249
+mem_heap_B=12388388
+mem_heap_extra_B=933996
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=1846213470
+mem_heap_B=12293796
+mem_heap_extra_B=884748
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=1863446178
+mem_heap_B=12182084
+mem_heap_extra_B=828604
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=1880678613
+mem_heap_B=11595684
+mem_heap_extra_B=883908
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=1897911274
+mem_heap_B=11952756
+mem_heap_extra_B=954988
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=1915142556
+mem_heap_B=12483492
+mem_heap_extra_B=1004124
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=1932375406
+mem_heap_B=12555860
+mem_heap_extra_B=1040308
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=1949606856
+mem_heap_B=12598276
+mem_heap_extra_B=1061516
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=1966838144
+mem_heap_B=12612900
+mem_heap_extra_B=1068668
+mem_stacks_B=0
+heap_tree=detailed
+n8: 12612900 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5877376 0x110EAE: allocate (new_allocator.h:151)
+  n1: 5877376 0x110EAE: allocate (alloc_traits.h:482)
+   n1: 5877376 0x110EAE: _M_allocate (stl_vector.h:381)
+    n1: 5877376 0x110EAE: _M_allocate (stl_vector.h:378)
+     n1: 5877376 0x110EAE: void std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >::_M_realloc_insert<std::pair<int, double> >(__gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > >, std::pair<int, double>&&) (vector.tcc:459)
+      n1: 5877376 0x10E4BB: emplace_back<std::pair<int, double> > (vector.tcc:123)
+       n1: 5877376 0x10E4BB: push_back (stl_vector.h:1299)
+        n1: 5877376 0x10E4BB: addEdge (graph.hpp:24)
+         n1: 5877376 0x10E4BB: addEdge (graph.hpp:19)
+          n0: 5877376 0x10E4BB: main (main.cpp:135)
+ n1: 2400000 0x10DA90: allocate (new_allocator.h:151)
+  n1: 2400000 0x10DA90: allocate (alloc_traits.h:482)
+   n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:381)
+    n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:378)
+     n1: 2400000 0x10DA90: _M_create_storage (stl_vector.h:398)
+      n1: 2400000 0x10DA90: _Vector_base (stl_vector.h:335)
+       n1: 2400000 0x10DA90: vector (stl_vector.h:557)
+        n1: 2400000 0x10DA90: Graph (graph.hpp:14)
+         n0: 2400000 0x10DA90: main (main.cpp:119)
+ n1: 2097152 0x110A96: allocate (new_allocator.h:151)
+  n1: 2097152 0x110A96: allocate (alloc_traits.h:482)
+   n1: 2097152 0x110A96: _M_allocate (stl_vector.h:381)
+    n1: 2097152 0x110A96: _M_allocate (stl_vector.h:378)
+     n1: 2097152 0x110A96: std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::pair<double, double>*, std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > > >, unsigned long, std::pair<double, double> const&) (vector.tcc:587)
+      n1: 2097152 0x10DD61: resize (stl_vector.h:1037)
+       n1: 2097152 0x10DD61: set_coords (graph.hpp:33)
+        n0: 2097152 0x10DD61: main (main.cpp:127)
+ n1: 800000 0x111837: allocate (new_allocator.h:151)
+  n1: 800000 0x111837: allocate (alloc_traits.h:482)
+   n1: 800000 0x111837: _M_allocate (stl_vector.h:381)
+    n1: 800000 0x111837: _M_allocate (stl_vector.h:378)
+     n1: 800000 0x111837: _M_create_storage (stl_vector.h:398)
+      n1: 800000 0x111837: _Vector_base (stl_vector.h:335)
+       n1: 800000 0x111837: vector (stl_vector.h:571)
+        n1: 800000 0x111837: dijkstra(Graph const&, int) (dijkstra.cpp:11)
+         n1: 800000 0x10FD49: operator() (main.cpp:170)
+          n1: 800000 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 800000 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 800000 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 800000 0x113786: operator() (std_function.h:591)
+              n1: 800000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 800000 0x10DEF9: main (main.cpp:170)
+ n1: 524288 0x11265A: allocate (new_allocator.h:151)
+  n1: 524288 0x11265A: allocate (alloc_traits.h:482)
+   n1: 524288 0x11265A: _M_allocate (stl_vector.h:381)
+    n1: 524288 0x11265A: _M_allocate (stl_vector.h:378)
+     n1: 524288 0x11265A: _M_realloc_insert<double&, int&> (vector.tcc:459)
+      n1: 524288 0x11265A: emplace_back<double&, int&> (vector.tcc:123)
+       n2: 524288 0x11265A: MinHeap::push(double, int) (minheap.hpp:27)
+        n1: 524288 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+         n1: 524288 0x10FD49: operator() (main.cpp:170)
+          n1: 524288 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 524288 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 524288 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 524288 0x113786: operator() (std_function.h:591)
+              n1: 524288 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 524288 0x10DEF9: main (main.cpp:170)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 481664 0x112229: allocate (new_allocator.h:151)
+  n1: 481664 0x112229: allocate (alloc_traits.h:482)
+   n1: 481664 0x112229: _M_allocate_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (hashtable_policy.h:1990)
+    n1: 481664 0x112229: _Scoped_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (hashtable.h:307)
+     n1: 481664 0x112229: std::__detail::_Map_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](int const&) (hashtable_policy.h:818)
+      n1: 481664 0x11244E: operator[] (unordered_map.h:987)
+       n2: 481664 0x11244E: MinHeap::push(double, int) (minheap.hpp:28)
+        n1: 481664 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+         n1: 481664 0x10FD49: operator() (main.cpp:170)
+          n1: 481664 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+           n1: 481664 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+            n1: 481664 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+             n1: 481664 0x113786: operator() (std_function.h:591)
+              n1: 481664 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+               n0: 481664 0x10DEF9: main (main.cpp:170)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 336344 0x11206D: allocate (new_allocator.h:151)
+  n1: 336344 0x11206D: allocate (alloc_traits.h:482)
+   n1: 336344 0x11206D: _M_allocate_buckets (hashtable_policy.h:2044)
+    n1: 336344 0x11206D: _M_allocate_buckets (hashtable.h:442)
+     n1: 336344 0x11206D: _M_rehash_aux (hashtable.h:2586)
+      n1: 336344 0x11206D: std::_Hashtable<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_rehash(unsigned long, unsigned long const&) (hashtable.h:2565)
+       n1: 336344 0x1122A2: _M_insert_unique_node (hashtable.h:2179)
+        n1: 336344 0x1122A2: std::__detail::_Map_base<int, std::pair<int const, int>, std::allocator<std::pair<int const, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](int const&) (hashtable_policy.h:825)
+         n1: 336344 0x11244E: operator[] (unordered_map.h:987)
+          n2: 336344 0x11244E: MinHeap::push(double, int) (minheap.hpp:28)
+           n1: 336344 0x111E59: dijkstra(Graph const&, int) (dijkstra.cpp:36)
+            n1: 336344 0x10FD49: operator() (main.cpp:170)
+             n1: 336344 0x10FD49: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+              n1: 336344 0x10FD49: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+               n1: 336344 0x10FD49: std::_Function_handler<void (), main::{lambda()#4}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+                n1: 336344 0x113786: operator() (std_function.h:591)
+                 n1: 336344 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                  n0: 336344 0x10DEF9: main (main.cpp:170)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 96076 in 21 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=74
+#-----------
+time=1984069508
+mem_heap_B=12603220
+mem_heap_extra_B=1059460
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=2001301714
+mem_heap_B=12573380
+mem_heap_extra_B=1038636
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=2018534614
+mem_heap_B=12525076
+mem_heap_extra_B=1009220
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=2035765959
+mem_heap_B=12460004
+mem_heap_extra_B=972540
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=2052998272
+mem_heap_B=12379892
+mem_heap_extra_B=929524
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=2070230536
+mem_heap_B=12284244
+mem_heap_extra_B=879876
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=2087463064
+mem_heap_B=12170132
+mem_heap_extra_B=822628
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=2103138405
+mem_heap_B=13257068
+mem_heap_extra_B=803196
+mem_stacks_B=0
+heap_tree=detailed
+n8: 13257068 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5877376 0x110EAE: allocate (new_allocator.h:151)
+  n1: 5877376 0x110EAE: allocate (alloc_traits.h:482)
+   n1: 5877376 0x110EAE: _M_allocate (stl_vector.h:381)
+    n1: 5877376 0x110EAE: _M_allocate (stl_vector.h:378)
+     n1: 5877376 0x110EAE: void std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >::_M_realloc_insert<std::pair<int, double> >(__gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > >, std::pair<int, double>&&) (vector.tcc:459)
+      n1: 5877376 0x10E4BB: emplace_back<std::pair<int, double> > (vector.tcc:123)
+       n1: 5877376 0x10E4BB: push_back (stl_vector.h:1299)
+        n1: 5877376 0x10E4BB: addEdge (graph.hpp:24)
+         n1: 5877376 0x10E4BB: addEdge (graph.hpp:19)
+          n0: 5877376 0x10E4BB: main (main.cpp:135)
+ n1: 2400000 0x10DA90: allocate (new_allocator.h:151)
+  n1: 2400000 0x10DA90: allocate (alloc_traits.h:482)
+   n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:381)
+    n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:378)
+     n1: 2400000 0x10DA90: _M_create_storage (stl_vector.h:398)
+      n1: 2400000 0x10DA90: _Vector_base (stl_vector.h:335)
+       n1: 2400000 0x10DA90: vector (stl_vector.h:557)
+        n1: 2400000 0x10DA90: Graph (graph.hpp:14)
+         n0: 2400000 0x10DA90: main (main.cpp:119)
+ n1: 2097152 0x110A96: allocate (new_allocator.h:151)
+  n1: 2097152 0x110A96: allocate (alloc_traits.h:482)
+   n1: 2097152 0x110A96: _M_allocate (stl_vector.h:381)
+    n1: 2097152 0x110A96: _M_allocate (stl_vector.h:378)
+     n1: 2097152 0x110A96: std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::pair<double, double>*, std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > > >, unsigned long, std::pair<double, double> const&) (vector.tcc:587)
+      n1: 2097152 0x10DD61: resize (stl_vector.h:1037)
+       n1: 2097152 0x10DD61: set_coords (graph.hpp:33)
+        n0: 2097152 0x10DD61: main (main.cpp:127)
+ n1: 800000 0x112827: allocate (new_allocator.h:151)
+  n1: 800000 0x112827: allocate (alloc_traits.h:482)
+   n1: 800000 0x112827: _M_allocate (stl_vector.h:381)
+    n1: 800000 0x112827: _M_allocate (stl_vector.h:378)
+     n1: 800000 0x112827: _M_create_storage (stl_vector.h:398)
+      n1: 800000 0x112827: _Vector_base (stl_vector.h:335)
+       n1: 800000 0x112827: vector (stl_vector.h:571)
+        n1: 800000 0x112827: a_star_with_path(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:25)
+         n1: 800000 0x1132BD: a_star(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:88)
+          n1: 800000 0x1100FF: operator() (main.cpp:171)
+           n1: 800000 0x1100FF: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+            n1: 800000 0x1100FF: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+             n1: 800000 0x1100FF: std::_Function_handler<void (), main::{lambda()#5}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+              n1: 800000 0x113786: operator() (std_function.h:591)
+               n1: 800000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                n0: 800000 0x10DFF3: main (main.cpp:171)
+ n1: 800000 0x1128A0: allocate (new_allocator.h:151)
+  n1: 800000 0x1128A0: allocate (alloc_traits.h:482)
+   n1: 800000 0x1128A0: _M_allocate (stl_vector.h:381)
+    n1: 800000 0x1128A0: _M_allocate (stl_vector.h:378)
+     n1: 800000 0x1128A0: _M_create_storage (stl_vector.h:398)
+      n1: 800000 0x1128A0: _Vector_base (stl_vector.h:335)
+       n1: 800000 0x1128A0: vector (stl_vector.h:571)
+        n1: 800000 0x1128A0: a_star_with_path(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:26)
+         n1: 800000 0x1132BD: a_star(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:88)
+          n1: 800000 0x1100FF: operator() (main.cpp:171)
+           n1: 800000 0x1100FF: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+            n1: 800000 0x1100FF: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+             n1: 800000 0x1100FF: std::_Function_handler<void (), main::{lambda()#5}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+              n1: 800000 0x113786: operator() (std_function.h:591)
+               n1: 800000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                n0: 800000 0x10DFF3: main (main.cpp:171)
+ n1: 786432 0x112FEF: allocate (new_allocator.h:151)
+  n1: 786432 0x112FEF: allocate (alloc_traits.h:482)
+   n1: 786432 0x112FEF: _M_allocate (stl_vector.h:381)
+    n1: 786432 0x112FEF: _M_allocate (stl_vector.h:378)
+     n1: 786432 0x112FEF: _M_realloc_insert<double&, int const&> (vector.tcc:459)
+      n1: 786432 0x112FEF: emplace_back<double&, int const&> (vector.tcc:123)
+       n1: 786432 0x112FEF: emplace<double&, int const&> (stl_queue.h:756)
+        n1: 786432 0x112FEF: a_star_with_path(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:73)
+         n1: 786432 0x1132BD: a_star(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:88)
+          n1: 786432 0x1100FF: operator() (main.cpp:171)
+           n1: 786432 0x1100FF: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+            n1: 786432 0x1100FF: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+             n1: 786432 0x1100FF: std::_Function_handler<void (), main::{lambda()#5}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+              n1: 786432 0x113786: operator() (std_function.h:591)
+               n1: 786432 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                n0: 786432 0x10DFF3: main (main.cpp:171)
+ n1: 400000 0x112920: allocate (new_allocator.h:151)
+  n1: 400000 0x112920: allocate (alloc_traits.h:482)
+   n1: 400000 0x112920: _M_allocate (stl_vector.h:381)
+    n1: 400000 0x112920: _M_allocate (stl_vector.h:378)
+     n1: 400000 0x112920: _M_create_storage (stl_vector.h:398)
+      n1: 400000 0x112920: _Vector_base (stl_vector.h:335)
+       n1: 400000 0x112920: vector (stl_vector.h:571)
+        n1: 400000 0x112920: a_star_with_path(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:27)
+         n1: 400000 0x1132BD: a_star(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:88)
+          n1: 400000 0x1100FF: operator() (main.cpp:171)
+           n1: 400000 0x1100FF: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+            n1: 400000 0x1100FF: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+             n1: 400000 0x1100FF: std::_Function_handler<void (), main::{lambda()#5}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+              n1: 400000 0x113786: operator() (std_function.h:591)
+               n1: 400000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                n0: 400000 0x10DFF3: main (main.cpp:171)
+ n0: 96108 in 21 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=82
+#-----------
+time=2108961121
+mem_heap_B=14194924
+mem_heap_extra_B=803204
+mem_stacks_B=0
+heap_tree=peak
+n10: 14194924 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5877376 0x110EAE: allocate (new_allocator.h:151)
+  n1: 5877376 0x110EAE: allocate (alloc_traits.h:482)
+   n1: 5877376 0x110EAE: _M_allocate (stl_vector.h:381)
+    n1: 5877376 0x110EAE: _M_allocate (stl_vector.h:378)
+     n1: 5877376 0x110EAE: void std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >::_M_realloc_insert<std::pair<int, double> >(__gnu_cxx::__normal_iterator<std::pair<int, double>*, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > >, std::pair<int, double>&&) (vector.tcc:459)
+      n1: 5877376 0x10E4BB: emplace_back<std::pair<int, double> > (vector.tcc:123)
+       n1: 5877376 0x10E4BB: push_back (stl_vector.h:1299)
+        n1: 5877376 0x10E4BB: addEdge (graph.hpp:24)
+         n1: 5877376 0x10E4BB: addEdge (graph.hpp:19)
+          n0: 5877376 0x10E4BB: main (main.cpp:135)
+ n1: 2400000 0x10DA90: allocate (new_allocator.h:151)
+  n1: 2400000 0x10DA90: allocate (alloc_traits.h:482)
+   n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:381)
+    n1: 2400000 0x10DA90: _M_allocate (stl_vector.h:378)
+     n1: 2400000 0x10DA90: _M_create_storage (stl_vector.h:398)
+      n1: 2400000 0x10DA90: _Vector_base (stl_vector.h:335)
+       n1: 2400000 0x10DA90: vector (stl_vector.h:557)
+        n1: 2400000 0x10DA90: Graph (graph.hpp:14)
+         n0: 2400000 0x10DA90: main (main.cpp:119)
+ n1: 2097152 0x110A96: allocate (new_allocator.h:151)
+  n1: 2097152 0x110A96: allocate (alloc_traits.h:482)
+   n1: 2097152 0x110A96: _M_allocate (stl_vector.h:381)
+    n1: 2097152 0x110A96: _M_allocate (stl_vector.h:378)
+     n1: 2097152 0x110A96: std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::pair<double, double>*, std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > > >, unsigned long, std::pair<double, double> const&) (vector.tcc:587)
+      n1: 2097152 0x10DD61: resize (stl_vector.h:1037)
+       n1: 2097152 0x10DD61: set_coords (graph.hpp:33)
+        n0: 2097152 0x10DD61: main (main.cpp:127)
+ n1: 800000 0x112827: allocate (new_allocator.h:151)
+  n1: 800000 0x112827: allocate (alloc_traits.h:482)
+   n1: 800000 0x112827: _M_allocate (stl_vector.h:381)
+    n1: 800000 0x112827: _M_allocate (stl_vector.h:378)
+     n1: 800000 0x112827: _M_create_storage (stl_vector.h:398)
+      n1: 800000 0x112827: _Vector_base (stl_vector.h:335)
+       n1: 800000 0x112827: vector (stl_vector.h:571)
+        n1: 800000 0x112827: a_star_with_path(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:25)
+         n1: 800000 0x1132BD: a_star(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:88)
+          n1: 800000 0x1100FF: operator() (main.cpp:171)
+           n1: 800000 0x1100FF: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+            n1: 800000 0x1100FF: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+             n1: 800000 0x1100FF: std::_Function_handler<void (), main::{lambda()#5}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+              n1: 800000 0x113786: operator() (std_function.h:591)
+               n1: 800000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                n0: 800000 0x10DFF3: main (main.cpp:171)
+ n1: 800000 0x1128A0: allocate (new_allocator.h:151)
+  n1: 800000 0x1128A0: allocate (alloc_traits.h:482)
+   n1: 800000 0x1128A0: _M_allocate (stl_vector.h:381)
+    n1: 800000 0x1128A0: _M_allocate (stl_vector.h:378)
+     n1: 800000 0x1128A0: _M_create_storage (stl_vector.h:398)
+      n1: 800000 0x1128A0: _Vector_base (stl_vector.h:335)
+       n1: 800000 0x1128A0: vector (stl_vector.h:571)
+        n1: 800000 0x1128A0: a_star_with_path(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:26)
+         n1: 800000 0x1132BD: a_star(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:88)
+          n1: 800000 0x1100FF: operator() (main.cpp:171)
+           n1: 800000 0x1100FF: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+            n1: 800000 0x1100FF: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+             n1: 800000 0x1100FF: std::_Function_handler<void (), main::{lambda()#5}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+              n1: 800000 0x113786: operator() (std_function.h:591)
+               n1: 800000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                n0: 800000 0x10DFF3: main (main.cpp:171)
+ n1: 800000 0x11304D: allocate (new_allocator.h:151)
+  n1: 800000 0x11304D: allocate (alloc_traits.h:482)
+   n1: 800000 0x11304D: _M_allocate (stl_vector.h:381)
+    n1: 800000 0x11304D: _M_allocate (stl_vector.h:378)
+     n1: 800000 0x11304D: _M_create_storage (stl_vector.h:398)
+      n1: 800000 0x11304D: _Vector_base (stl_vector.h:335)
+       n1: 800000 0x11304D: vector (stl_vector.h:603)
+        n1: 800000 0x11304D: pair<std::vector<double>&, std::vector<int>&> (stl_pair.h:688)
+         n1: 800000 0x11304D: a_star_with_path(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:54)
+          n1: 800000 0x1132BD: a_star(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:88)
+           n1: 800000 0x1100FF: operator() (main.cpp:171)
+            n1: 800000 0x1100FF: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+             n1: 800000 0x1100FF: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+              n1: 800000 0x1100FF: std::_Function_handler<void (), main::{lambda()#5}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+               n1: 800000 0x113786: operator() (std_function.h:591)
+                n1: 800000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                 n0: 800000 0x10DFF3: main (main.cpp:171)
+ n1: 524288 0x112FEF: allocate (new_allocator.h:151)
+  n1: 524288 0x112FEF: allocate (alloc_traits.h:482)
+   n1: 524288 0x112FEF: _M_allocate (stl_vector.h:381)
+    n1: 524288 0x112FEF: _M_allocate (stl_vector.h:378)
+     n1: 524288 0x112FEF: _M_realloc_insert<double&, int const&> (vector.tcc:459)
+      n1: 524288 0x112FEF: emplace_back<double&, int const&> (vector.tcc:123)
+       n1: 524288 0x112FEF: emplace<double&, int const&> (stl_queue.h:756)
+        n1: 524288 0x112FEF: a_star_with_path(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:73)
+         n1: 524288 0x1132BD: a_star(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:88)
+          n1: 524288 0x1100FF: operator() (main.cpp:171)
+           n1: 524288 0x1100FF: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+            n1: 524288 0x1100FF: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+             n1: 524288 0x1100FF: std::_Function_handler<void (), main::{lambda()#5}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+              n1: 524288 0x113786: operator() (std_function.h:591)
+               n1: 524288 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                n0: 524288 0x10DFF3: main (main.cpp:171)
+ n1: 400000 0x112920: allocate (new_allocator.h:151)
+  n1: 400000 0x112920: allocate (alloc_traits.h:482)
+   n1: 400000 0x112920: _M_allocate (stl_vector.h:381)
+    n1: 400000 0x112920: _M_allocate (stl_vector.h:378)
+     n1: 400000 0x112920: _M_create_storage (stl_vector.h:398)
+      n1: 400000 0x112920: _Vector_base (stl_vector.h:335)
+       n1: 400000 0x112920: vector (stl_vector.h:571)
+        n1: 400000 0x112920: a_star_with_path(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:27)
+         n1: 400000 0x1132BD: a_star(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:88)
+          n1: 400000 0x1100FF: operator() (main.cpp:171)
+           n1: 400000 0x1100FF: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+            n1: 400000 0x1100FF: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+             n1: 400000 0x1100FF: std::_Function_handler<void (), main::{lambda()#5}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+              n1: 400000 0x113786: operator() (std_function.h:591)
+               n1: 400000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                n0: 400000 0x10DFF3: main (main.cpp:171)
+ n1: 400000 0x113093: allocate (new_allocator.h:151)
+  n1: 400000 0x113093: allocate (alloc_traits.h:482)
+   n1: 400000 0x113093: _M_allocate (stl_vector.h:381)
+    n1: 400000 0x113093: _M_allocate (stl_vector.h:378)
+     n1: 400000 0x113093: _M_create_storage (stl_vector.h:398)
+      n1: 400000 0x113093: _Vector_base (stl_vector.h:335)
+       n1: 400000 0x113093: vector (stl_vector.h:603)
+        n1: 400000 0x113093: pair<std::vector<double>&, std::vector<int>&> (stl_pair.h:688)
+         n1: 400000 0x113093: a_star_with_path(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:54)
+          n1: 400000 0x1132BD: a_star(Graph const&, int, int, std::function<double (int, int)>) (astar.cpp:88)
+           n1: 400000 0x1100FF: operator() (main.cpp:171)
+            n1: 400000 0x1100FF: __invoke_impl<void, main(int, char**)::<lambda()>&> (invoke.h:61)
+             n1: 400000 0x1100FF: __invoke_r<void, main(int, char**)::<lambda()>&> (invoke.h:111)
+              n1: 400000 0x1100FF: std::_Function_handler<void (), main::{lambda()#5}>::_M_invoke(std::_Any_data const&) (std_function.h:290)
+               n1: 400000 0x113786: operator() (std_function.h:591)
+                n1: 400000 0x113786: benchmark_run(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::function<void ()>, int) (benchmark.cpp:18)
+                 n0: 400000 0x10DFF3: main (main.cpp:171)
+ n0: 96108 in 19 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=83
+#-----------
+time=2126428829
+mem_heap_B=13670636
+mem_heap_extra_B=803196
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=2143896537
+mem_heap_B=13670636
+mem_heap_extra_B=803196
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=2161364245
+mem_heap_B=13670636
+mem_heap_extra_B=803196
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=86
+#-----------
+time=2178831953
+mem_heap_B=13670636
+mem_heap_extra_B=803196
+mem_stacks_B=0
+heap_tree=empty

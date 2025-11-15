@@ -1,0 +1,89 @@
+Day-1 -- LINUX SETUP
+    Installed Linuxfor Windows
+       wsl --install -d Ubuntu
+       sudo apt update
+       sudo apt install build-essential cmake valgrind linux-tools-common git
+    Connected Vs Code to Ubuntu Remote - WSL extension
+    Opened the directory graph-engine
+       /mnt/c/graph-engine/
+       code .
+    Tested the Files and Setup
+       g++ --version
+       cmake --version
+       git --version
+       valgrind --version
+    Created and Tested a Simple File(check.cpp)
+       g++ -std=c++17 check.cpp -o test
+       ./test
+
+Day-2 -- File Structure and include
+    Made the file Structure
+    made include/graph.hpp
+
+Day-3 -- Sample Data and src/main
+    Made sample data and wrote src/main.cpp
+
+Day-4,5 -- Testing the Data and debugging
+     mkdir build
+     cd build
+     cmake ..
+     make
+     ./graph_engine
+
+Day-6 -- Created a copy at Linux-side for performance
+    cp -r /mnt/c/graph-engine ~/graph-engine
+    cd ~/graph-engine    -- to work directly in linux-side copy
+
+Day-7,8 -- Made src/dijkstra.cpp
+   wrote code for dijkstra and optimized it
+
+Day-8 -- Configured Dijstra to src/main.cpp
+   Configured Dijstra to src/main.cpp
+   Using chrono calculated the runtime
+
+Day-9,10,11 -- Executed A* algorithm
+   wrote code for A* algorithm
+
+Day-12 -- Configured A* to src/main.cpp
+   Configured A* to src/main.cpp
+   Using chrono calculated the runtime and compared it to Dijkstra runtime
+
+Day-13 -- DEBUGGING
+
+Day-14 -- Created BenchMark Function
+   It runs a function for n(=5) times and calculate the avg  runtime
+   Using this function, Compared the average runtime for Dijkstra and A*
+
+Day-15 -- Profile with Valgrind(CallGrind)
+   Measured function-level CPU usage
+   sudo apt install valgrind -y
+   cd ~/graph-engine/build
+   valgrind --tool=callgrind ./graph_engine
+
+   callgrind_annotate callgrind.out.12345 | less
+
+Day-16,17 -- Analyzed the Call Count and percentage GPU usage for different STL used
+
+Day-18 -- System-Level Profiling with perf
+   sudo apt install linux-tools-common linux-tools-generic
+   cd ~/graph-engine/build
+   perf stat ./graph_engine
+   sudo perf stat -e task-clock,context-switches,cpu-migrations,page-faults ./graph_engine
+
+Day-19,20 -- Analysis
+    Analyze the data and researched about optimisation techniques
+ Optimisation Ideas
+   1.Replace priority queue with custom min heap
+   2.
+   3.
+   4.
+
+New Command
+  cd ~/graph-engine/build
+  cmake -DCMAKE_BUILD_TYPE=Release ..
+  make -j$(nproc)
+  ./graph_engine
+
+
+
+

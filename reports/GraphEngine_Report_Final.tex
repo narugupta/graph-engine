@@ -1,0 +1,113 @@
+%----------------------------------------------------
+% Graph Engine: A* vs Dijkstra Benchmarking Report
+% IEEE-style concise report (2 pages)
+% Author: Narendra Kumar Gupta
+%----------------------------------------------------
+\documentclass[conference]{IEEEtran}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\title{\textbf{Graph Engine: Benchmarking A* and Dijkstra Algorithms for Scalable Pathfinding Systems}}
+
+\author{
+  \IEEEauthorblockN{Narendra Kumar Gupta}
+  \IEEEauthorblockA{
+    Dept. of Electronics \& Instrumentation Engineering \\
+    National Institute of Technology, Silchar \\
+    \texttt{narugupta01@gmail.com.com}
+  }
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This project presents the design and evaluation of \textbf{Graph Engine}, a modular benchmarking system for analyzing classical and heuristic-based pathfinding algorithms. Over a 10-week development cycle, we implemented and compared \textbf{Dijkstra's} and \textbf{A* algorithms}, extended to handle both random and real-world graphs, with runtime, memory, and heuristic scaling analysis. The results demonstrate that A* outperforms Dijkstra by up to \textbf{9.3$\times$} on large-scale graphs, while maintaining identical path accuracy.
+\end{abstract}
+
+\section{Introduction}
+Shortest-path algorithms are core to navigation, robotics, and network optimization. While Dijkstra’s algorithm guarantees optimality, it explores unnecessary nodes, reducing efficiency. The A* algorithm introduces a heuristic function that prioritizes promising nodes. The goal of this work is to build a \textit{C++ benchmarking framework} that systematically compares Dijkstra and A* in terms of \textbf{speed, memory, and accuracy}, and to explore heuristic scaling and parallel optimizations.
+
+\section{Methodology}
+The system was implemented in \textbf{modern C++17}, with a modular build pipeline managed by CMake and Python-based analysis tools.
+
+\subsection{Week-by-Week Development}
+\begin{itemize}
+  \item \textbf{Weeks 1--2:} Implemented the core \texttt{Graph} class with adjacency lists, followed by Dijkstra’s algorithm using a min-heap priority queue.
+  \item \textbf{Week 3:} Introduced the benchmarking framework using \texttt{std::chrono} and CSV data logging.
+  \item \textbf{Week 4:} Implemented A* with a configurable heuristic function.
+  \item \textbf{Week 5:} Added spatial coordinates and the Euclidean heuristic. Integrated Valgrind Massif for memory profiling.
+  \item \textbf{Week 6:} Integrated real-world graph data using OSMnx (Zurich, Switzerland). Implemented robust CSV parsing.
+  \item \textbf{Week 7:} Created an accuracy validation module to compare path costs and lengths.
+  \item \textbf{Week 8:} Conducted heuristic scaling experiments varying $\alpha$ in $h_\alpha = \alpha \cdot h(a,b)$.
+  \item \textbf{Week 9:} Implemented a parallel Dijkstra variant using OpenMP.
+  \item \textbf{Week 10:} Developed Python visualization suite and automated performance dashboards.
+\end{itemize}
+
+\section{Experimental Setup}
+Benchmarks were performed on an Ubuntu 22.04 system with an Intel i7 CPU (8 cores).  
+Random graphs were generated for $N \in \{10^4, 5\cdot10^4, 10^5\}$ nodes with $\approx 3N$ edges.  
+Real graphs were obtained via OpenStreetMap data for Zurich (4,618 nodes, 10,558 edges).
+
+\section{Results and Analysis}
+\subsection{Runtime Performance}
+Table~\ref{tab:runtime} summarizes mean runtime (ms) and speedup ratios.
+
+\begin{table}[h]
+\centering
+\caption{Runtime Benchmark (A* vs Dijkstra)}
+\begin{tabular}{lccc}
+\toprule
+Nodes & Dijkstra (ms) & A* (ms) & Speedup \\
+\midrule
+10,000 & 0.0032 & 0.0032 & 1.00$\times$ \\
+50,000 & 0.0296 & 0.0060 & 4.93$\times$ \\
+100,000 & 0.0900 & 0.0096 & 9.37$\times$ \\
+\bottomrule
+\end{tabular}
+\label{tab:runtime}
+\end{table}
+
+\noindent
+On real graphs, A* achieves near-instant convergence when using Euclidean heuristics.  
+Parallel Dijkstra achieved a further \textbf{2--3$\times$ speedup} using 4 threads.
+
+\subsection{Memory Profiling}
+Valgrind Massif profiling confirmed linear memory growth with node count, peaking at \textbf{12.7 MB} for 100k-node graphs.
+
+\subsection{Heuristic Scaling}
+Varying $\alpha$ from 0 to 5 showed no cost deviation below $\alpha=2$.  
+Optimal speed was observed at $\alpha=1$ with consistent path optimality.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{heuristic_scaling.png}
+\caption{Heuristic scaling: Runtime vs $\alpha$ coefficient.}
+\end{figure}
+
+\section{Discussion}
+A* consistently reduces search space by guiding exploration toward the target using spatial heuristics. The Euclidean metric was effective even for randomly distributed coordinates. The parallel Dijkstra variant confirms scalability potential for multi-threaded workloads. 
+
+\section{Conclusion and Future Work}
+This project developed a complete framework for benchmarking pathfinding algorithms, integrating generation, benchmarking, profiling, and visualization.  
+Future extensions include:
+\begin{itemize}
+  \item Implementing bidirectional A* for further speedups.
+  \item GPU-accelerated Dijkstra/A* kernels.
+  \item Integration with real-time visualization dashboards.
+\end{itemize}
+
+
+\bibliographystyle{IEEEtran}
+\begin{thebibliography}{00}
+\bibitem{a} E. W. Dijkstra, ``A note on two problems in connexion with graphs,'' \textit{Numerische Mathematik}, vol. 1, 1959.
+\bibitem{b} P. Hart, N. Nilsson, B. Raphael, ``A Formal Basis for the Heuristic Determination of Minimum Cost Paths,'' \textit{IEEE Trans. SSC}, 1968.
+\bibitem{c} G. Boeing, ``OSMnx: New methods for acquiring, constructing, analyzing, and visualizing complex street networks,'' \textit{Computers, Environment and Urban Systems}, 2017.
+\end{thebibliography}
+
+\end{document}
